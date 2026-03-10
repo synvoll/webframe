@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<webform-configuration>
+   <svn-configuration url="svn://10.14.113.80/ALM" user="service" password="service"/>
+   <ldap-configurations>
+       <ldap-configuration host="10.14.21.10" port="389" bind-dn="OU=Benutzer-ae,OU=Rollen,OU=Gruppen,DC=senfin,DC=verwalt-berlin,DC=de"/>
+   	   <ldap-configuration host="10.14.21.10" port="389" bind-dn="OU=Benutzer-sys,OU=Rollen,OU=Gruppen,DC=senfin,DC=verwalt-berlin,DC=de"/>
+   	   <ldap-configuration host="10.14.113.10" port="389" bind-dn="OU=Benutzer,OU=1197A,OU=BE,DC=BET,DC=ACUSTIG"/>
+   </ldap-configurations>
+</webform-configuration>

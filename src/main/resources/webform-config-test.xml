@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<webform-configuration>
+    <svn-configuration url="svn://192.168.131.2:3690/tfa_demo" user="service" password="service"/>
+    <!-- <svn-configuration url="http://185.183.156.242/svn/tfa" user="alm" password="syn_alm_2018" non-apache="yes"/> -->
+    <ldap-configurations>
+        <ldap-configuration host="localhost" port="389" bind-dn="@ee.lan"/>
+   	    <ldap-configuration host="192.168.153.13" port="389" bind-dn="@ee.lan"/>
+   	    <ldap-configuration host="remotehost" port="389" bind-dn="@ee.lan"/>
+   	    <ldap-configuration host="192.168.131.2" port="389" bind-dn="ou=sg6,ou=tfa,dc=easirun,dc=de"/>
+    </ldap-configurations>
+</webform-configuration>
