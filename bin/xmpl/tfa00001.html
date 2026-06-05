@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de" >
+<head>
+  <meta charset="UTF-8">
+  <title>TFA-Freigabeverfügung</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main-content">
+
+        <!-- only example, have to been designed according to excel form first -->
+        <!-- this part will be flexible designed for each form to be loaded into frame -->
+        <!-- the css styles should be fixed and only changed by project (src) -->
+
+        <form class="webframe" method="post" action="#">
+
+            <div class="form-title-row">
+                <h1>Übergabe zwischen AE und Softwareverteilung</h1>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Paketname</span>
+                    <input type="text" name="package">
+                </label>
+             </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Version</span>
+                    <input type="text" name="version">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label><span>Verteilart</span></label>
+                <div class="form-radio-buttons">
+
+                    <div>
+                        <label>
+                            <input type="radio" name="delivery">
+                            <span>Serverpaket</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            <input type="radio" name="delivery">
+                            <span>Clientpaket</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            <input type="radio" name="delivery">
+                            <span>Citrix-TS</span>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Kurzbeschreibung</span>
+                    <input type="text" name="comment">
+                </label>
+             </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Paketart</span>
+                    <select name="dropdown">
+                        <option>Fehlerbereinigung</option>
+                        <option>neues Paket</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>UNIFA-Installation</span>
+                    <input type="checkbox" name="unifa" checked>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>BAP-Installation</span>
+                    <input type="checkbox" name="bap" checked>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Basisclient-Installation</span>
+                    <input type="checkbox" name="basic" checked>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>sonstige Installation</span>
+                    <input type="checkbox" name="other" checked>
+                </label>
+            </div>
+
+
+            <div class="form-row">
+                <button type="submit">Freigabe</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+    
